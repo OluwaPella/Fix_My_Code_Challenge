@@ -21,7 +21,7 @@ ARGV.each do |arg|
             i += 1
         else
             result.insert(i - 1, i_arg)
-            is_inserted = true
+            is_inserted = false
             break
         end
     end
