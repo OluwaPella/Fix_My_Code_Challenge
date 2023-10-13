@@ -10,10 +10,6 @@ app = Flask(__name__)
 app.register_blueprint(app_views)
 
 
-@app.route('/status')
-def status():
-    return jsonify({"status": "API is up and running"})
-
 @app.errorhandler(404)
 def not_found(error):
     """ json 404 page """
